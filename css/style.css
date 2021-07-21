@@ -1,14 +1,20 @@
+        /* COMMON */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+h1,h2,h3,h4{
+    font-weight: bold;
 }
 .container70{
     width: 70%;
     margin: auto;
 }
+    /* HEADER */
 header, .footer-bot{
-    background-color: rgb(3, 51, 122);
+    background-color: #2c3e50;
     padding: 10px;
     width: 100%;
 }
@@ -25,15 +31,45 @@ header, .footer-bot{
 header ul{
     list-style-type: none;
 }
+.link div a, .header-sx {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.link div a{
+    font-size: 12px;
+}
+    /* MAIN */
 .hero{
-    background-color: aqua;
+    background-color: #1abc9c;
     padding: 10px;
+    color: #fff;
 }
 .square{
     width: 100%;
-    height: 100px;
-    background-color: brown;
-    border-radius: 10px;
+}
+.square img{
+    width: 100%;
+}
+.barra-nera,.barra-bianca {
+    height: 5px;
+    width: 100%;
+    border-radius: 5px;
+}
+.barra-nera{
+    background-color: #000000
+}
+.barra-bianca{
+    background-color: #ffffff;
+}
+.vertical-center{
+    align-items: center;
+}
+.icona-b{
+    color: #ffffff;
+}
+.icona-n{
+    color: #000000;
 }
 .center{
     justify-content: center;
@@ -42,9 +78,52 @@ header ul{
     width: 60%;
     margin: auto;
 }
-.footer-top{
-    background-color: cadetblue ;
+        /* INPUT */
+.control-short{
+    width: 80%;
+    display: inline-block;
 }
+.form-control{
+    border: none;
+}
+.label-short{
+    width: 19%;
+}
+hr{
+    color: #cccccc;
+    opacity: 1;
+}
+/* FOOTER */
+.icone-social{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid white;
+    color: #fff;
+}
+.color-green{
+    color: #1abc9c;
+}
+footer{
+    color: #ffffff;
+    padding: 15px 0;
+}
+.padding{
+    padding: 15px;
+}
+.margin{
+    margin-top: 20px;
+}
+h3{
+    font-size: 24px;
+}
+.footer-top{
+    background-color: #3a546d;
+}
+.copryright{
+    font-size: 10px;
+}
+        /* MEDIAQ */
 @media screen and (max-width: 576px) {
     .link{
         display: none;
@@ -56,5 +135,6 @@ header ul{
    
     .hamburger{
         display: inline-block;
+        color: #fff;
     }
   }
